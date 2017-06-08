@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Palindrome
+				</title>
+	</head>
+	<body>
+		<center><h1>Enter Some String </h1></center>
+    	<center><form id="form">
+    			Enter your Text here<input type="text" id="text">
+    			<button type="button" onclick="palin()">Submit</button>
+		</form></center>
+		<script type="text/javascript">
+			function palin()
+			{
+				var Str=document.getElementById("text").value;
+				RevStr="";
+				Strlen=Str.length;
+				for(var j=Strlen; j>=0; j--)
+				{
+					RevStr=RevStr+Str.charAt(j);
+				}
+				document.write(RevStr +"<br>");
+			    if(Str==RevStr)
+			    {
+			    	document.write("String is Palindrome");
+			    }
+			    else
+			    {
+			    	document.write("String is not Palindrome");
+			    }
+			}
+
+
+		</script>
+	</body>
+</html>
