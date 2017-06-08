@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Two Dimensional Matrix
+		</title>
+	</head>
+	<body>
+		<script>
+			var Arr=new Array(2);
+			for (var i = 0; i<2; i++)
+			{
+				Arr[i]=new Array(2);
+			}
+			Arr[0][0]= 1;
+			Arr[0][1]= 2;
+			Arr[1][0]= 3;
+			Arr[1][1]= 4;
+			for(var i=0; i<2; i++)
+			{
+				for(var j=0; j<2; j++)
+			
+			document.write(Arr[i][j], "&emsp;");
+	document.write("<br>");
+}
+	document.write(" + ");
+           document.write("<br>");
+           var Arr1=new Array(2);
+			for (var p = 0; p<2; p++)
+			{
+				Arr1[p]=new Array(2);
+			}
+			Arr1[0][0]= 5;
+			Arr1[0][1]= 6;
+			Arr1[1][0]= 7;
+			Arr1[1][1]= 8;
+			for(var p=0; p<2; p++)
+			{
+				for(var q=0; q<2; q++)
+			
+			document.write(Arr1[p][q], "&emsp;");
+	document.write("<br>");
+}
+      document.write("=");
+      document.write("<br>");
+      var Arr2=new Array(2);
+			for (var a = 0; a<2; a++)
+			{
+				Arr2[a]=new Array(2);
+			}
+			Arr2[0][0]= Arr[0][0] + Arr1[0][0];
+			Arr2[0][1]= Arr[0][1] + Arr1[0][1];
+			Arr2[1][0]= Arr[1][0] + Arr1[1][0];
+			Arr2[1][1]= Arr[1][1] + Arr1[1][1];
+			for(var a=0; a<2; a++)
+			{
+				for(var b=0; b<2; b++)
+			
+			document.write(Arr2[a][b], "&emsp;");
+	document.write("<br>");
+}
+		</script>
+	</body>
+</html>
